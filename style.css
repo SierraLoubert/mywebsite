@@ -115,13 +115,13 @@ body {
 }
 
 /* Projects */
-.project-grid {
+.grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
-.project-card {
+.card {
     background: var(--color-secondary);
     padding: 25px;
     border-radius: 12px;
@@ -129,11 +129,11 @@ body {
     transition: 0.3s;
 }
 
-.project-card:hover {
+.card:hover {
     transform: translateY(-5px);
 }
 
-.project-card h3 {
+.card h3 {
     margin-bottom: 10px;
 }
 
@@ -184,7 +184,7 @@ footer {
         gap: 10px;
     }
 
-    .project-grid {
+    .grid {
         grid-template-columns: 1fr;
     }
 

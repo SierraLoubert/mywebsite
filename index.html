@@ -1,28 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Sierra Loubert Studio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sierra Loubert Studio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="box header-section color-mandatory">
-    <!-- Circular profile image above the main heading -->
-    <img src="img/bio_picture.png" alt="Bio picture" class="profile-picture">
-    <h1 class="hero-title">Welcome to My Website</h1>
-  </div>
-  <!-- This div is used for the website background image -->
-  <div class="site-background"></div>
-  <div>
-    <!-- This is a list of links to other websites -->
-    <ul>
-      <li><a href="https://www.google.com" target="_blank">Google</a></li>
-      <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
-      <li><a href="https://www.wikipedia.org" target="_blank">Wikipedia</a></li>
-      <li><a href="https://github.com" target="_blank">GitHub</a></li>
-      <li><a href="https://www.nasa.gov" target="_blank">NASA</a></li>
-    </ul>
-  </div>
-  <!-- Add your HTML content here -->
+
+    <!-- Background Image -->
+    <div class="site-background"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2 class="logo">Sierra Studio</h2>
+
+        <ul class="nav-links">
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero / Bio Section -->
+    <section id="bio" class="hero-section">
+        <img src="img/bio_picture.png" alt="Profile picture" class="profile-picture">
+
+        <h1 class="hero-title">Hi, I'm Sierra</h1>
+
+        <p class="hero-text">
+            I am a graphic designer and web development student building
+            portfolio projects that combine creativity, design, and coding.
+            This website showcases my work as I grow and learn.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="content-box">
+        <h2>My Projects</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>A personal website showcasing my work and design style.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Brand Identity</h3>
+                <p>Logo and visual branding projects for design practice.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Web Layout Design</h3>
+                <p>Responsive webpage layouts using HTML and CSS.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-box">
+        <h2>Contact Us</h2>
+
+        <ul class="contact-links">
+            <li>
+                <a href="mailto:your@email.com">Email Me</a>
+            </li>
+
+            <li>
+                <a href="https://www.linkedin.com/in/sierra-loubert-45b705336" target="_blank">
+                    LinkedIn
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.instagram.com" target="_blank">
+                    Instagram
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Sierra Loubert Studio</p>
+
+        <!-- LinkedIn Logo -->
+        <a href="https://www.linkedin.com/in/sierra-loubert-45b705336" target="_blank">
+            <img src="img/linkedin.png" alt="LinkedIn Logo" class="linkedin-logo">
+        </a>
+    </footer>
+
 </body>
 </html>

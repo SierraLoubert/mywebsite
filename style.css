@@ -224,9 +224,18 @@ footer {
     border-top: 1px solid rgba(244, 237, 228, 0.15);
 }
 
+footer h2 {
+    margin: 0 0 4px;
+}
+
+footer a {
+    display: inline-block;
+    margin: 0 4px;
+}
+
 .linkedin-logo {
     width: 40px;
-    margin-top: 15px;
+    margin-top: 0;
 }
 
 /* Mobile Responsive */

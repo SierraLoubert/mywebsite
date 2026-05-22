@@ -1,10 +1,17 @@
 /* Color Variables */
 :root {
     --color-mandatory: #1f3b3e;
-    --color-secondary: #6aa6ad;
+    --color-secondary: #6aa6ad; 
     --color-accent-1: #e6f3f6;
     --color-accent-2: #0f2a2d;
+
+    --color-button: #E07A5F;
+    --color-gold: #D4A017;
+    --color-beige: #F4EDE4;
+    --color-peach: #F2B5A7;
+    --color-gray: #B7B7B7;
 }
+
 
 /* Reset */
 * {
@@ -16,8 +23,8 @@
 /* Body */
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--color-mandatory);
-    color: white;
+    background: linear-gradient(180deg, var(--color-mandatory) 0%, var(--color-accent-2) 100%);
+    color: var(--color-accent-1);
     line-height: 1.6;
 }
 
@@ -28,11 +35,11 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-image: url("img/hero-bg.jpg");
+    background: linear-gradient(180deg, var(--color-button), var(--color-peach)), url("img/hero-bg.jpg");
     background-size: cover;
     background-position: center;
+    background-blend-mode: multiply;
     z-index: -1;
-    opacity: 0.25;
 }
 
 /* Navigation */
@@ -41,14 +48,15 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
-    background: rgba(15, 42, 45, 0.9);
+    background: rgba(31, 59, 62, 0.92);
     position: sticky;
     top: 0;
     backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(244, 237, 228, 0.15);
 }
 
 .logo {
-    color: white;
+    color: var(--color-beige);
     font-size: 24px;
 }
 
@@ -60,17 +68,17 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--color-accent-1);
+    color: var(--color-beige);
     font-weight: bold;
 }
 
 .nav-links a:hover {
-    color: var(--color-secondary);
+    color: var(--color-gold);
 }
 
 /* Links: default and clicked/visited states */
 a {
-    color: var(--color-accent-1);
+    color: var(--color-beige);
     text-decoration: none;
 }
 a:active,
@@ -91,7 +99,7 @@ a:visited {
     height: 170px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid white;
+    border: 4px solid var(--color-beige);
     margin-bottom: 20px;
 }
 
@@ -112,9 +120,11 @@ a:visited {
     max-width: 1100px;
     margin: 40px auto;
     padding: 40px;
-    background: rgba(31, 59, 62, 0.95);
+    background: rgba(244, 237, 228, 0.93);
+    color: var(--color-accent-2);
     border-radius: 16px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    border: 1px solid rgba(212, 160, 23, 0.35);
 }
 
 /* Section Titles */
@@ -122,6 +132,7 @@ a:visited {
     text-align: center;
     margin-bottom: 30px;
     font-size: 32px;
+    color: var(--color-mandatory);
 }
 
 /* Projects */
@@ -132,15 +143,17 @@ a:visited {
 }
 
 .card {
-    background: var(--color-secondary);
+    background: linear-gradient(180deg, var(--color-button), var(--color-peach));
     padding: 25px;
     border-radius: 12px;
-    color: white;
+    color: var(--color-accent-2);
     transition: 0.3s;
+    border: 1px solid rgba(31, 59, 62, 0.12);
 }
 
 .card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(15, 42, 45, 0.18);
 }
 
 .card h3 {
@@ -159,19 +172,20 @@ a:visited {
 
 .contact-links a {
     text-decoration: none;
-    color: var(--color-accent-1);
+    color: var(--color-mandatory);
     font-size: 18px;
     font-weight: bold;
 }
 
 .contact-links a:hover {
-    color: var(--color-accent-2);
+    color: var(--color-gold);
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 30px 20px;
+    color: var(--color-beige);
 }
 
 .linkedin-logo {

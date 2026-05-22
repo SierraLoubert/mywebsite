@@ -75,6 +75,10 @@ body {
     color: var(--color-gold);
 }
 
+.nav-links a:visited {
+    color: var(--color-peach);
+}
+
 /* Links: default and clicked/visited states */
 a {
     color: var(--color-beige);

@@ -60,11 +60,21 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: white;
+    color: var(--color-accent-1);
     font-weight: bold;
 }
 
 .nav-links a:hover {
+    color: var(--color-secondary);
+}
+
+/* Links: default and clicked/visited states */
+a {
+    color: var(--color-accent-1);
+    text-decoration: none;
+}
+a:active,
+a:visited {
     color: var(--color-secondary);
 }
 
